@@ -1,0 +1,13 @@
+<article class="gh-card post no-image">
+    <a class="gh-card-link" href="{{url}}">
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">{{title}}</h3>
+            <p class="gh-card-excerpt is-body">{{excerpt characters="400"}}</p>
+            <footer class="gh-card-meta">
+                {{#if @custom.show_publish_date}}
+                    <time class="gh-card-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMM YYYY"}}</time>
+                {{/if}}
+            </footer>
+        </div>
+    </a>
+</article>
